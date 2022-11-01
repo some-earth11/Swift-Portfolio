@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YJ-ud-xeN">
+                                <rect key="frame" x="144" y="102" width="102" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="0p3-I5-BVH"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="SAMARTH">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="Arial-BoldItalicMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile picture" translatesAutoresizingMaskIntoConstraints="NO" id="kCI-4X-dpT">
+                                <rect key="frame" x="75" y="160" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpP-nB-ep6">
+                                <rect key="frame" x="75" y="445" width="240" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="263" id="9dv-hq-iR3"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mth-iW-O64">
+                                <rect key="frame" x="156" y="435" width="78" height="28"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="view more">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="infoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLH-do-zmj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mth-iW-O64" secondAttribute="bottom" constant="347" id="8oV-8k-QZd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GpP-nB-ep6" secondAttribute="bottom" constant="102" id="ByT-2b-JaR"/>
+                            <constraint firstItem="mth-iW-O64" firstAttribute="top" secondItem="kCI-4X-dpT" secondAttribute="bottom" constant="35" id="CO8-3o-3L9"/>
+                            <constraint firstItem="GpP-nB-ep6" firstAttribute="top" secondItem="kCI-4X-dpT" secondAttribute="bottom" constant="45" id="CUH-cQ-0ra"/>
+                            <constraint firstItem="GpP-nB-ep6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="L80-dl-TKm"/>
+                            <constraint firstItem="0YJ-ud-xeN" firstAttribute="centerX" secondItem="mth-iW-O64" secondAttribute="centerX" id="Qc0-Kd-lJN"/>
+                            <constraint firstItem="0YJ-ud-xeN" firstAttribute="centerX" secondItem="kCI-4X-dpT" secondAttribute="centerX" id="Ub9-5t-9TB"/>
+                            <constraint firstItem="mth-iW-O64" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="Xc5-ov-b2z"/>
+                            <constraint firstItem="0YJ-ud-xeN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="ab1-31-15h"/>
+                            <constraint firstItem="0YJ-ud-xeN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dWb-bq-S9c"/>
+                            <constraint firstItem="0YJ-ud-xeN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="pcZ-BR-Smd"/>
+                            <constraint firstItem="kCI-4X-dpT" firstAttribute="top" secondItem="0YJ-ud-xeN" secondAttribute="bottom" constant="31" id="ttb-0Z-zD8"/>
+                            <constraint firstItem="GpP-nB-ep6" firstAttribute="leading" secondItem="kCI-4X-dpT" secondAttribute="leading" id="uUe-2e-ZsI"/>
+                            <constraint firstItem="0YJ-ud-xeN" firstAttribute="centerX" secondItem="GpP-nB-ep6" secondAttribute="centerX" id="uxJ-Cg-exV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="GpP-nB-ep6" id="v26-5Q-43o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile picture" width="640" height="640"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
